@@ -1,5 +1,5 @@
 @charset "UTF-08";
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -10,10 +10,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+     background-color:hsl(210, 46%, 95%);
 }
 main{
-    height: 70%;
+    height: 90%;
     width: 90%;
     
     display: grid;
@@ -27,33 +29,79 @@ main{
 section{
     background-color: blueviolet;
     padding-right: 1em;
+    border-radius: 7px;
+   padding-left: 1em;
+   padding: 1em;
+   box-shadow: 0px 0px 2px 1px hsla(0, 0%, 0%, 0.159) ;
+  
+
 }
 .top-container{
    display: flex;
+   align-items: center;
+   
+   height: 4em;
+ 
 }
 
 .top-container img{
     border-radius: 50%;
+    border: 3px solid #fff;
+    transform: scale(0.5);
+    
 }
 h2{
- 
+ font-size: .9em;
+ color:hsl(210, 46%, 95%);
+}
+.top-container p{
+    font-size: .8em;
+    color: hsla(210, 46%, 95%, 0.504);
+    
 }
 .daniel-container{
     background: url("images/bg-pattern-quotation.svg") no-repeat ;
     background-position: 85% 10%;
-    background-color: blueviolet;
+    background-color: hsl(263, 55%, 52%);
     grid-area: daniel;
 }
 
 .jonathan-container{
     grid-area: jonathan;
+    background-color: hsl(217, 19%, 35%) ;
 }
 .kira-container{
+    
     grid-area: kira;
+    background-color: hsl(0, 0%, 100%);
+}
+.kira-container .destaque, .jeanette-container .destaque{
+    color: hsl(219, 29%, 14%);
+}
+.kira-container p, .jeanette-container p{
+    color: hsla(217, 30%, 14%, 0.7);
+}
+.kira-container h2, .jeanette-container h2{
+    color: hsl(219, 29%, 14%);
 }
 .jeanette-container{
+    background-color: hsl(0, 0%, 100%);
     grid-area: jeanette;
 }
 .patrick-container{
+    background-color: hsl(219, 29%, 14%);
     grid-area: patrick;
+}
+
+.destaque{
+    font-size: 1.2em;
+    padding-bottom: .5em;
+    line-height: 1.2em;
+    font-weight: 600;
+    color: hsl(210, 0%, 95%); 
+}
+p{
+    font-size: 1.05em;
+    line-height: 1.5em;
+    color: hsl(0, 0%, 81%) ;
 }
