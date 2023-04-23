@@ -10,14 +10,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     font-family: 'Barlow Semi Condensed', sans-serif;
      background-color:hsl(210, 46%, 95%);
+     padding: 1em;
 }
-
 main{
-    height: 90%;
+    padding: 0em;
+    height: 50%;
     width: 90%;
+}
+article{
+    height: 50%;
+    width: 100%;
+
     
     display: grid;
     grid-template-areas: 
@@ -34,6 +40,8 @@ section{
    padding-left: 1em;
    padding: 1em;
    box-shadow: 0px 0px 2px 1px hsla(0, 0%, 0%, 0.159) ;
+   
+   
   
 
 }
@@ -110,15 +118,46 @@ p{
     color: hsl(0, 0%, 81%) ;
 }
 
-@media screen and (max-width:1405px) {
 
-    main{
-        padding: 2em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+@media screen and (max-width:1485px) {
+
+    section{
+      font-size: .9em;
+    }
+  
+  }
+  @media screen and (max-width:1145px) {
+  
+      section{
+        font-size: .8em;
+      }
+    
+    }
+    @media screen and (max-width:910px) {
+  
+      section{
+        font-size: .75em;
+      }
+    
+    }
+    @media screen and (max-width:850px) {
+
+        article{
+            padding: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        section{
+            font-size: 1em;
+            transition: .3s ease-in-out;
+        }
+        section:hover{
+            transform: scale(1.05);
+        }
+    
+    
     }
 
-
-}
+   

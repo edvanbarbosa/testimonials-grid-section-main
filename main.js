@@ -1,8 +1,16 @@
 import VanillaTilt from "./vanilla-tilt.js";
 
 
+if ( innerWidth >= 900){
+    VanillaTilt.init(document.querySelectorAll("section"))
 
-VanillaTilt.init(document.querySelectorAll("section"))
+}
+
+
+
+
+
+
 
 
 ScrollReveal().reveal('.daniel-container',{delay:250});
